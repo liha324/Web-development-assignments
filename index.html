@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTech - Smart Watch</title>
+
+```
+<style>
+
+    /* CSS Variables */
+    :root {
+        --primary-color: #14213d;
+        --secondary-color: #0077b6;
+        --background-color: #f4f8fb;
+        --text-color: #333;
+    }
+
+    /* General Styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    /* Header */
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 8%;
+        gap: 30px;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-content button {
+        background-color: var(--secondary-color);
+        color: white;
+        border: none;
+        padding: 14px 28px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .hero-content button:hover {
+        background-color: var(--primary-color);
+    }
+
+    .hero-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 80%;
+        max-width: 350px;
+        border-radius: 15px;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 60px 8%;
+        text-align: center;
+    }
+
+    .features h2 {
+        font-size: 32px;
+        color: var(--primary-color);
+        margin-bottom: 35px;
+    }
+
+    .feature-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .feature-card {
+        background-color: white;
+        padding: 30px 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .feature-card h3 {
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+    }
+
+    .feature-card p {
+        line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        header nav a {
+            margin: 0 8px;
+        }
+
+        .hero {
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 6%;
+        }
+
+        .hero-content h1 {
+            font-size: 32px;
+        }
+
+        .feature-container {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- Header Section -->
+<header>
+    <h2>SmartTech</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Meet Your New SmartWatch</h1>
+
+            <p>
+                Experience the perfect combination of style and
+                technology. SmartTech SmartWatch helps you track
+                your fitness, monitor your health, and stay connected
+                throughout the day.
+            </p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+            alt="Modern Smart Watch">
+
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+
+        <h2>Why Choose SmartTech?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h3>Fitness Tracking</h3>
+                <p>
+                    Track your daily steps, calories, and physical
+                    activities with ease.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Long Battery Life</h3>
+                <p>
+                    Enjoy long-lasting battery performance
+                    without frequent charging.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Smart Notifications</h3>
+                <p>
+                    Receive calls, messages, and notifications
+                    directly on your smartwatch.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer Section -->
+<footer id="contact">
+    <p>© 2026 SmartTech. All Rights Reserved.</p>
+    <p>Contact: smarttech@example.com</p>
+</footer>
+```
+
+</body>
+</html>

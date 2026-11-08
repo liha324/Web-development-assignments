@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef1f7;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.container {
+  background: white;
+  width: 90%;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+h1 { text-align: center; }
+.input-row { display: flex; gap: 8px; }
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+}
+#error { color: red; min-height: 18px; }
+ul { list-style: none; padding: 0; }
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f5f6fa;
+  border-radius: 6px;
+}
+li span { cursor: pointer; flex: 1; }
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+.delete-btn { background: #e74c3c; }
