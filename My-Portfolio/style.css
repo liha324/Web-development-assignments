@@ -1,0 +1,514 @@
+/* =================================
+   GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #263248;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6546d7;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #263248;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6546d7;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* =================================
+   HOME SECTION
+================================= */
+
+.hero {
+    min-height: 520px;
+    background: linear-gradient(
+        135deg,
+        #f4f0ff,
+        #ffffff
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #6546d7;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #19243a;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    color: #6546d7;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.welcome) {
+    font-size: 17px;
+    color: #606b7c;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6546d7;
+    color: white;
+
+    padding: 13px 28px;
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #4930a8;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about {
+    max-width: 950px;
+    margin: auto;
+    padding: 85px 25px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 34px;
+    color: #19243a;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 17px;
+    color: #606b7c;
+    line-height: 1.9;
+}
+
+
+/* =================================
+   SKILLS SECTION
+================================= */
+
+.skills-section {
+    background-color: #f7f6fc;
+    padding: 85px 25px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #19243a;
+}
+
+.skills-section > p {
+    color: #606b7c;
+    margin-bottom: 35px;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 28px 22px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(101, 70, 215, 0.13);
+}
+
+.skill-card h3 {
+    color: #6546d7;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.skill-card p {
+    color: #606b7c;
+    font-size: 15px;
+}
+
+
+/* =================================
+   PROJECTS SECTION
+================================= */
+
+.projects {
+    padding: 85px 25px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 34px;
+    color: #19243a;
+    margin-bottom: 12px;
+}
+
+.project-intro {
+    color: #606b7c;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 30px;
+
+    border: 1px solid #e9e5f5;
+    border-radius: 12px;
+
+    text-align: left;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(101, 70, 215, 0.12);
+}
+
+.project-card h3 {
+    font-size: 21px;
+    color: #6546d7;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #606b7c;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.project-card h4 {
+    color: #19243a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.technology {
+    display: inline-block;
+
+    background-color: #eee9ff;
+    color: #6546d7;
+
+    padding: 5px 13px;
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin: 3px;
+}
+
+.project-btn {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 10px 17px;
+
+    background-color: #6546d7;
+    color: white;
+
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #4930a8;
+}
+
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+.contact {
+    background-color: #f7f6fc;
+    padding: 85px 25px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 34px;
+    color: #19243a;
+    margin-bottom: 15px;
+}
+
+.contact > p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #606b7c;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 12px 0;
+    color: #263248;
+}
+
+.contact-info a {
+    color: #6546d7;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTACT FORM */
+
+#contact-form {
+    max-width: 550px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #d9d4e8;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+#contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #6546d7;
+}
+
+#contact-form button {
+    padding: 14px;
+
+    background-color: #6546d7;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #4930a8;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #19243a;
+    color: white;
+
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+
+        width: 100%;
+        text-align: center;
+
+        gap: 15px;
+        padding-top: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .skills-section h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+
+}
